@@ -468,7 +468,39 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	
-	<script>$('.count').counterUp({delay:10,time:3000}) mybutton=document.getElementBYId("myBTn");window.onscroll=function(){scrollFunction()} function scrollFunction() {if(document.body.scrollTop>20||document.documentElement.scrollTop>20){mybutton.style.display="block";} else {mybutton.style.display="none";}} function topFunction(){document.body.scrollTop=0;document.documentElement.scrollTop=0;}</script>
+	 <script>
+  	
+  		$('.count').counterUp({
+  			delay:10,
+  			time:3000
+  		})
+
+
+  		//Get the button :
+  		mybutton = document.getElementBYId("myBTn");
+
+  		window.onscroll = function() {
+  			scrollFunction()
+  		}
+
+  		function scrollFunction()
+  			{
+  				if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
+  					mybutton.style.display = "block";
+  				}
+  				else
+  				{
+  					mybutton.style.display = "none";
+  				}
+
+  			}
+
+  			function topFunction(){
+  				document.body.scrollTop = 0;
+  				document.documentElement.scrollTop = 0;
+  			}
+  		
+  </script>
 </body>
 
 </html>
