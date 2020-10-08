@@ -1,197 +1,192 @@
-html{
-	scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth
 }
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif
 }
 
-a { text-decoration: none; }
-
-a:hover{ text-decoration: none; }
-
-li{ list-style: none; }
-
-p{
-	font-size: 0.9rem;
-	line-height: 1.6;
-	font-weight: 400;
-	color: 	#b300b3;
+a,a:hover {
+    text-decoration: none
 }
 
-.extra1-div h2, .servicediv h2{
-	font-size: 0.9rem;
-	margin: 20px 0 15px 0;
-	font-weight: bold;
-	line-height: 1.1;
-	word-spacing: 4px;
-}
-i{
-	color: #2fccd0;
+li {
+    list-style: none
 }
 
-
-.header{
-	width: 100%;
-	height: 100vh;
-	background-image:linear-gradient(rgba(0, 168, 255,0.3), rgba(0, 168, 255,0.3)), url('../image/bg.jpg');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%,0 0);
-	position: relative;
+p {
+    font-size: .9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #b300b3
 }
 
-.header:before{
-	content: "";
-	position: absolute;
-	top: 0%;
-	bottom: 0%;
-	right: 0%;
-	left: 0%;
-	opacity: .4;
-	z-index: -1;
-	background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+.extra1-div h2,.servicediv h2 {
+    font-size: .9rem;
+    margin: 20px 0 15px;
+    font-weight: 700;
+    line-height: 1.1;
+    word-spacing: 4px
 }
 
-.navbar:before{
-	content: "";
-	position: absolute;
-	top: 0%;
-	bottom: 0%;
-	right: 0%;
-	left: 0%;
-	opacity: .5;
-	z-index: -1;
-	background: linear-gradient(to right, #1c043d 0%, #6600cc 0%, #6600cc 100%);
+i {
+    color: #2fccd0
 }
 
-.nav-item a{
-	color: #fff!important;
-	font-weight: bold;
-}
-.header-section{
-	width: 100%;
-	height: inherit;
-	color: yellow;
-	text-align: center;
-	position: relative;
+.header,body {
+    background-repeat: no-repeat
 }
 
-.center-div{
-	width: 100%;
-	height: auto;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
+.header,.header-section {
+    width: 100%;
+    position: relative
 }
 
-.header-buttons a{
-	border:1px solid #fff;
-	border-radius: 100px;
-	margin: 0 5px;
-	padding: 12px 35px;
-	outline: none;
-	color: #fff;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.4;
-	text-align: center;
-}
-.header-buttons a:hover{
-	color: #50d1c0;
-	background: #fff;
-	text-decoration: none;
-	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+.header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,168,255,.3),rgba(0,168,255,.3)),url(../image/bg.jpg);
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0,100% 75%,50% 100%,0 75%,0 0)
 }
 
-.center-div p{
-	font-size: 1.3rem;
-	padding: 10px 0 20px 0;
-	color: 	#cc3300;
+.header:before,.navbar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1
 }
-/***************************************extra css div Start***************************************/
-	
-	.header-extradiv{
-		width: 100%;
-		height: auto;
-		margin:100px 0;
-		text-align: center;
-	}
 
-	.extra1-div{
-		background:#fff;
-		border:none;
-		padding: 20px;
-		border-radius: 3px;
-		transition: 0.3s; 
-	}
-
-	.extra1-div:hover{
-		box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-		transform: translateY(-30px);
-	}
-/*************************************** extra css div End***************************************/
-
-/*************************************** service offer css start ***************************************/
-
-	.serviceffers{
-		background: #f7f7f9;
-		padding: 50px 0;
-		margin-bottom: 50px;
-	}
-	.headings{
-		margin-bottom: 50px;
-	}
-
-	.headings h1{
-		font-size: 1.5rem;
-		font-weight: 600;
-		text-transform: uppercase;
-	}
-	.names h1{
-		color: #2e2e2e;
-		font-size: 0.9rem;
-		text-transform: uppercase;
-		font-weight: bold;
-	}
-
-	.service-icons{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-.progress{
-	height: 0.7rem!important;
-	margin-bottom: 25px!important;
-	background: #606060;
+.header:before {
+    opacity: .4;
+    background: linear-gradient(to right,#1e5799 0,#3ccdbb 0,#16c9f6 100%)
 }
-/*************************************** service offer css start ***************************************/
 
-/*************************************** register form css start ***************************************/
+.navbar:before {
+    opacity: .5;
+    background: linear-gradient(to right,#1c043d 0,#60c 0,#60c 100%)
+}
 
+.nav-item a {
+    color: #fff!important;
+    font-weight: 700
+}
+
+.header-section {
+    height: inherit;
+    color: #ff0;
+    text-align: center
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%)
+}
+
+.header-buttons a {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center
+}
+
+.header-buttons a:hover {
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3)
+}
+
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px;
+    color: #c30
+}
+
+.header-extradiv {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center
+}
+
+.extra1-div {
+    background: #fff;
+    border: 0;
+    padding: 20px;
+    border-radius: 3px;
+    transition: .3s
+}
+
+.extra1-div:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+    transform: translateY(-30px)
+}
+
+.serviceffers {
+    background: #f7f7f9;
+    padding: 50px 0
+}
+
+.headings,.serviceffers {
+    margin-bottom: 50px
+}
+
+.headings h1,.names h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.names h1 {
+    color: #2e2e2e;
+    font-size: .9rem;
+    font-weight: 700
+}
+
+.service-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.progress {
+    height: .7rem!important;
+    margin-bottom: 25px!important;
+    background: #606060
+}
 
 body {
     color: #000;
     overflow-x: hidden;
     height: 100%;
-    background-color: #B0BEC5;
-    background-repeat: no-repeat;
+    background-color: #b0bec5
 }
 
 .card0 {
-    box-shadow: 0px 4px 8px 0px #757575;
-    border-radius: 0px;
+    box-shadow: 0 4px 8px 0 #757575;
+    border-radius: 0
 }
 
 .card2 {
-    margin: 0px 40px;
+    margin: 0 40px
 }
 
 .logo {
@@ -203,14 +198,14 @@ body {
 
 .image {
     width: 360px;
-    height: 280px;
+    height: 280px
 }
 
 .border-line {
-    border-right: 1px solid #EEEEEE;
+    border-right: 1px solid #eee
 }
 
-.facebook {
+.facebook,.linkedin,.twitter {
     background-color: #3b5998;
     color: #fff;
     font-size: 18px;
@@ -218,118 +213,91 @@ body {
     border-radius: 50%;
     width: 35px;
     height: 35px;
-    cursor: pointer;
+    cursor: pointer
 }
 
-.twitter {
-    background-color: #1DA1F2;
-    color: #fff;
-    font-size: 18px;
-    padding-top: 5px;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
+.linkedin,.twitter {
+    background-color: #1da1f2
 }
 
 .linkedin {
-    background-color: #2867B2;
-    color: #fff;
-    font-size: 18px;
-    padding-top: 5px;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
+    background-color: #2867b2
 }
 
 .line {
     height: 1px;
     width: 45%;
-    background-color: #E0E0E0;
-    margin-top: 10px;
+    background-color: #e0e0e0;
+    margin-top: 10px
 }
 
 .or {
     width: 10%;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .text-sm {
-    font-size: 14px !important
+    font-size: 14px!important
 }
 
 ::placeholder {
-    color: #BDBDBD;
+    color: #bdbdbd;
     opacity: 1;
-    font-weight: 300;
+    font-weight: 300
 }
 
-:-ms-input-placeholder {
-    color: #BDBDBD;
-    font-weight: 300;
+:-ms-input-placeholder,::-ms-input-placeholder {
+    color: #bdbdbd;
+    font-weight: 300
 }
 
-::-ms-input-placeholder {
-    color: #BDBDBD;
-    font-weight: 300;
-}
-
-input,
-textarea {
-    padding: 10px 12px 10px 12px;
-    border: 1px solid lightgrey;
+input,textarea {
+    padding: 10px 12px;
+    border: 1px solid #d3d3d3;
     border-radius: 2px;
     margin-bottom: 5px;
     margin-top: 2px;
     width: 100%;
     box-sizing: border-box;
-    color: #2C3E50;
+    color: #2c3e50;
     font-size: 14px;
-    letter-spacing: 1px;
+    letter-spacing: 1px
 }
 
-input:focus,
-textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #304FFE;
-    outline-width: 0;
+input:focus,textarea:focus {
+    border: 1px solid #304ffe
 }
 
-button:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    outline-width: 0;
+button:focus,input:focus,textarea:focus {
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    outline-width: 0
 }
 
 a {
     color: inherit;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .btn-blue {
-    background-color: #1A237E;
     width: 150px;
-    color: #fff;
-    border-radius: 2px;
+    border-radius: 2px
 }
 
 .btn-blue:hover {
     background-color: #000;
-    cursor: pointer;
+    cursor: pointer
 }
 
-.bg-blue {
+.bg-blue,.btn-blue {
     color: #fff;
-    background-color: #1A237E
+    background-color: #1a237e
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width:991px) {
     .logo {
-        margin-left: 0px
+        margin-left: 0
     }
 
     .image {
@@ -342,313 +310,277 @@ a {
     }
 
     .card2 {
-        border-top: 1px solid #EEEEEE !important;
-        margin: 0px 15px
+        border-top: 1px solid #eee!important;
+        margin: 0 15px
     }
 }
 
-/*************************************** register form css end ***************************************/
-
-
-/*************************************** learnings css start ***************************************/
-	.project-work{
-		margin: 100px 0;
-	}
-
-   .project-work h1{
-   			font-size: 2rem;
-   			text-align: center;
-   			color: blue;
-   }
-/*************************************** learnings css end ***************************************/
-
-
-/*************************************** pricing grid css start ***************************************/
-
-.pricing{
-	width: 100%;
-	height: 100vh;
-	padding: 50px;
-	position: relative;
-}
-.pricing:before{
-	content: "";
-	position: absolute;
-	top: 0%;
-	bottom: 0%;
-	right: 0%;
-	left: 0%;
-	z-index: -1;
-	background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
-}
-.money{
-	font-size: 2rem;
-	line-height: 1;
-	color: #606060;
-
-}
-.card{
-	transition: 0.4s ease;
-}
-.card-header{
-	font-size: 1.6rem;
-	font-weight: bold;
-	background:#fff 9!important;
-	padding: 25px 9!important;
-}
-.card-body{
-	padding: 30px 0px!important;
-}
-.card-body li{
-	margin: 10px 0;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 1.6;
-	color: #606060;
-}
-.card-footer{
-	background: white!important;
-	padding: 30px 0px!important;
-}
-.card-footer a{
-	border:1px solid #50d1c0;
-	border-radius: 100px;
-	margin: 0 5px;
-	padding: 12px 35px;
-	outline: none;
-	color: #50d1c0;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.4;
-	text-align: center;
-}
-.card:hover .card-footer a{
-	color: #fff;
-	background: #50d1c0;
-	text-decoration: none;
-	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-}
-.card:hover{
-	transform: translateY(-30px);
-	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-}
-.card:hover  .card-header, .card:hover .money{
-	color: #50d1c0;
-}
-.card-second{
-	transform: translateY(-30px);
-	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+.project-work {
+    margin: 100px 0
 }
 
-
-
-/*************************************** pricing grid css end ***************************************/
-
-/***************************************Customer feedback css start ***************************************/
-
-.happyclients{
-	width: 100%;
-	height: 100vh;
-	padding: 80px 0;
-}
-.box{
-	text-align: center;
-	border: 1px solid rgba(0,0,0,0.2);
-	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
-	border-radius: 2px;
-	transition: 0.3s ease;
-}
-.box:hover{
-	background: #16c9f6;
-}
-.box:hover p{
-	color: white;
-
-}
-.carousel-indicators{
-	position: absolute;
-	right: 0;
-	bottom: -60px!important;
-}
-.carousel-indicators li{
-	background-color: #16c9f6!important;
-}
-.box a img{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	margin-top: 20px;
-}
-.box a:after{
-	content: "\f10d";
-	font-family: FontAwesome;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
-	color: white;
-	position: absolute;
-	top: 120%;
-	left: 70%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-.box h1{
-	font-size: 18px;
-	font-size: 700;
-	color: #000;
-	margin-bottom: 10px;
-}
-.box h2{
-	font-size: 13px;
-	font-weight: 400px;
-	color: #666666;
-	margin-bottom: 20px;
+.project-work h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #00f
 }
 
-/***************************************Customer feedback css end***************************************/
-
-
-/*************************************Contact Us css start***************************************/
-
-.contactus{
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	padding: 80px 0;
-}
-.contactus:before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
-	z-index: -1;
-}
-.form-button button{
-	border:1px solid #50d1c0;
-	border-radius: 100px;
-	margin: 0 5px;
-	padding: 12px 35px;
-	outline: none;
-	color: #50d1c0;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.4;
-	text-align: center;
-	background: transparent;
-
-}
-form:hover .form-button button{
-	background: #fff;
-	color: #50d1c0;
-	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-
-}
-::placeholder{
-	font-size: 0.85rem;
+.pricing {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative
 }
 
-
-/*************************************** Contact Us css end***************************************/
-
-/*************************************** newsletter css start***************************************/
-.newsletter{
-	width: 100%;
-	height: 100vh;
-	margin: 80px auto;
-
+.contactus:before,.pricing:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1
 }
 
-.news-input{
-	border-radius: 100px 0px 0px 100px!important;
-	min-width: 150px;
-	min-height:40px;
-
-}
-.input-group-text{
-	color: #fff!important;
-	background: #5bc0de!important;
-	border-radius: 0 100px 100px 0!important;
-	min-width: 140px;
-	min-height: 40.5px;
-
+.pricing:before {
+    background: linear-gradient(160deg,#16c9f6 55%,#fff 0)
 }
 
-
-
-/***************************************newsletter css end***************************************/
-
-/***************************************footersection css end***************************************/
-
-.footersection{
-	width: 100%;
-	height: 100vh;
-	padding: 70px 0 20px 0;
-	background: #1c043d;
-	position: relative;
-
-}
-.footersection p{
-	color: #fff;
-}
-.footersection li a{
-	font-size: 0.9rem;
-	line-height: 1.6;
-	font-weight: 400;
-	color: #fff;
-	text-transform: capitalize;
-}
-.footersection h3{
-	color: #e31216;
-	text-transform: uppercase;
-	margin-bottom: 25px;
-	font-size: 1.2rem!important;
-	font-weight: 600;
-	text-shadow: 0 2px 5px rgba(0,0,0,0.4);
-
-}
-#myBTn{
-	position: 20px;
-	right: 40px;
-	z-index: 99;
-	border: none;
-	color: #fff;
-	background: #00abff;
-	padding: 10px;
-	border-radius: 10px;
-}
-#myBTn:hover{
-	background: red;
-
+.money {
+    font-size: 2rem;
+    line-height: 1;
+    color: #606060
 }
 
-/***************************************footersection css end***************************************/
+.card {
+    transition: .4s ease
+}
 
-/********************************Media queries ***********************/
+.card-header {
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: #fff 9!important;
+    padding: 25px 9!important
+}
 
-@media(max-width: 768px){
-	.nav-item{
-		text-align: center!important;
-	}
-	.happyclients{
-		height: auto;
-		margin-top: 50px;
-	}
-	.card-second{
-		transform: translateY(0px);
-	}
-	.contactus p{
-		padding: 0 50px;
-	}
-	.footer-div{
-		text-align: left!important;
-	}
-	.footer-div{
-		margin: 20px 0; 
-	}
+.card-body,.card-footer {
+    padding: 30px 0!important
+}
+
+.card-body li {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060
+}
+
+.card-footer {
+    background: #fff!important
+}
+
+.card-footer a,.form-button button {
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: 0;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center
+}
+
+.card:hover .card-footer a {
+    color: #fff;
+    background: #50d1c0;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3)
+}
+
+.card-second,.card:hover {
+    transform: translateY(-30px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3)
+}
+
+.card:hover .card-header,.card:hover .money {
+    color: #50d1c0
+}
+
+.happyclients {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0
+}
+
+.box {
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);
+    border-radius: 2px;
+    transition: .3s ease
+}
+
+.box:hover {
+    background: #16c9f6
+}
+
+.box:hover p,.footersection p {
+    color: #fff
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px!important
+}
+
+.carousel-indicators li {
+    background-color: #16c9f6!important
+}
+
+.box a img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px
+}
+
+.box a:after {
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right,#1e5799 0,#3ccdbb 0,#16c9f6 100%);
+    color: #fff;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.box h1 {
+    font-size: 700;
+    color: #000;
+    margin-bottom: 10px
+}
+
+.box h2 {
+    font-size: 13px;
+    font-weight: 400px;
+    color: #666;
+    margin-bottom: 20px
+}
+
+.contactus {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 80px 0
+}
+
+.contactus:before {
+    background: linear-gradient(330deg,#16c9f6 55%,#fff 0)
+}
+
+.form-button button {
+    background: 0 0
+}
+
+form:hover .form-button button {
+    background: #fff;
+    color: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.3)
+}
+
+::placeholder {
+    font-size: .85rem
+}
+
+.newsletter {
+    width: 100%;
+    height: 100vh;
+    margin: 80px auto
+}
+
+.news-input {
+    border-radius: 100px 0 0 100px!important;
+    min-width: 150px;
+    min-height: 40px
+}
+
+.input-group-text {
+    color: #fff!important;
+    background: #5bc0de!important;
+    border-radius: 0 100px 100px 0!important;
+    min-width: 140px;
+    min-height: 40.5px
+}
+
+.footersection {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0 20px;
+    background: #1c043d;
+    position: relative
+}
+
+.footersection li a {
+    font-size: .9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize
+}
+
+.footersection h3 {
+    color: #e31216;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,.4)
+}
+
+#myBTn {
+    position: 20px;
+    right: 40px;
+    z-index: 99;
+    border: 0;
+    color: #fff;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px
+}
+
+#myBTn:hover {
+    background: red
+}
+
+@media (max-width:768px) {
+    .nav-item {
+        text-align: center!important
+    }
+
+    .happyclients {
+        height: auto;
+        margin-top: 50px
+    }
+
+    .card-second {
+        transform: translateY(0)
+    }
+
+    .contactus p {
+        padding: 0 50px
+    }
+
+    .footer-div {
+        text-align: left!important;
+        margin: 20px 0
+    }
 }
