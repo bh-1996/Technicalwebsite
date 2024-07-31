@@ -29,7 +29,8 @@ p {
     word-spacing: 4px
 }
 i {
-    color: #2fccd0
+    /* color: #2fccd0 */
+    color: #69a5b7;
 }
 .header,
 body {
@@ -42,7 +43,7 @@ body {
 }
 .header {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 168, 255, .3), rgba(0, 168, 255, .3)), url(../image/bg.jpg);
+    background-image: linear-gradient(rgba(0, 168, 255, .3), rgba(0, 168, 255, .3)), url(../image/h3.jpg);
     background-size: 100% 100%;
     clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0)
 }
@@ -57,8 +58,9 @@ body {
     z-index: -1
 }
 .header:before {
-    opacity: .4;
-    background: linear-gradient(to right, #1e5799 0, #3ccdbb 0, #16c9f6 100%)
+    opacity: .3;
+    /* background: linear-gradient(to right, #1e5799 0, #3ccdbb 0, #16c9f6 100%) */
+   background: linear-gradient(to right, #030f1c 0, #04332d 0, #0d596c 100%)
 }
 .navbar:before {
     opacity: .5;
@@ -515,4 +517,8 @@ form:hover .form-button button {
     [class*=col-] {
         width: 100%
     }
+}
+
+.fa-3x {
+    font-size: 2.2em !important;
 }
