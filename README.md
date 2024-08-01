@@ -50,8 +50,6 @@ To get a local copy up and running, follow these simple steps:
 
 **Show some image of project**
 
-![alt text](<Screenshot 2024-07-28 000820-1.png>)
+![alt text](image-1.png)
 
-![alt text](<Screenshot 2024-07-28 000835-1.png>)
-
-file:///C:/xampp/htdocs/projects/Technicalwebsite/index.html
+![alt text](image-2.png)
