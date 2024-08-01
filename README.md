@@ -18,11 +18,11 @@ To get a local copy up and running, follow these simple steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone git@github.com:bh-1996/Bhandari-Technical.git
+   git clone https://github.com/bh-1996/Technicalwebsite.git
 
 2. Navigate to the project directory:
     ```bash
-    cd Bhandari-Technical
+    cd Technicalwebsite
 
 3. Install dependencies:
     ```bash
